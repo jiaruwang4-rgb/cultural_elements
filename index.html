@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<title>Frame Studio</title>
+<script>
+(function(){
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+  if(isMobile){
+    window.location.replace('frame-studio-mobile.html');
+  }else{
+    window.location.replace('frame-studio-desktop.html');
+  }
+})();
+</script>
+</head>
+<body>
+<p style="text-align:center;margin-top:100px;color:#666;font-family:sans-serif;">正在跳转...</p>
+<p style="text-align:center;margin-top:20px;font-family:sans-serif;">
+  <a href="frame-studio-mobile.html">移动端</a> | 
+  <a href="frame-studio-desktop.html">桌面端</a>
+</p>
+</body>
+</html>
